@@ -6,7 +6,7 @@ public class PriorityAI : MonoBehaviour
     private string currentState = "idle"; // Initial state
     public wating = 4.5f
     void Start()
-    {
+    { //hola
         // empieza la priorizacion
         StartCoroutine(Prioritize());
     }
