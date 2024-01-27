@@ -9,7 +9,7 @@ public class TopDownCamera : MonoBehaviour
     // Start is called before the first frame update
     public Transform target; // El objeto que seguirá la cámara
     public float height = 10f; // Altura de la cámara
-    public float distance = 2f; // Distancia de la cámara
+    public float distance = 10f; // Distancia de la cámara
     public float rotationSpeed = 5f; // Velocidad de rotación de la cámara
 
     private Vector3 offset;
