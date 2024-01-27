@@ -4,7 +4,7 @@ using UnityEngine;
 public class PriorityAI : MonoBehaviour
 {
     private string currentState = "idle"; // Initial state
-
+    public wating = 4.5f
     void Start()
     {
         // empieza la priorizacion
@@ -20,16 +20,16 @@ public class PriorityAI : MonoBehaviour
             {
                 case "attacking":
                     Debug.Log("Priority: Attacking");
-                    yield return new WaitForSeconds(2.0f); 
+                    yield return new WaitForSeconds(wating); 
                     break;
                 case "eating":
                     Debug.Log("Priority: Eating");
-                    yield return new WaitForSeconds(1.5f);
+                    yield return new WaitForSeconds(wating);
                     break;
                 case "idle":
                 default:
                     Debug.Log("Priority: Idle");
-                    yield return new WaitForSeconds(1.0f); 
+                    yield return new WaitForSeconds(wating); 
                     break;
             }
         }
